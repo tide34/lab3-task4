@@ -1,0 +1,21 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: ruby:3.0.0
+    steps:
+      - checkout
+      - run:
+          name: Run code conventions checker
+          command: rubocop -A
+      - run:
+          name: Run security checker
+          command: brakeman . --force
+workflows:
+  version: 2
+  build_image:
+    jobs:
+      - build:
+          filters:
+            branches:
+             only: main
