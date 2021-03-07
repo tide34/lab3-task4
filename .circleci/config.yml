@@ -7,10 +7,14 @@ jobs:
       - checkout
       - run:
           name: Run code conventions checker
-          command: rubocop -A
+          command: | 
+                  gem install rubocop
+                  rubocop -A
       - run:
           name: Run security checker
-          command: brakeman . --force
+          command: |
+                  gem install brakeman
+                  brakeman . --force
 workflows:
   version: 2
   build_image:
