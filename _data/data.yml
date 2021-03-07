@@ -1,0 +1,132 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: True # set to False if you want education in main section instead of in sidebar
+
+    # Profile information
+    name: Artur Kragel
+    tagline: Junior Java Developer
+    avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+    # Sidebar links
+    email: artur.kragel@gmail.com
+    phone: +375(29) 119-99-61
+    #website: blog.webjeda.com #do not add http://
+    linkedin: artur-kragel
+    github: ArturKragel
+    telegram: NoKraken # add your nickname without '@' sign
+    #gitlab:
+    #bitbucket:
+    #twitter: '@webjeda'
+    #stack-overflow: # Number/Username, e.g. 123456/alandoe
+    #codewars:
+    #goodreads: # Number-Username, e.g. 123456-alandoe
+
+    languages:
+      - idiom: Russian
+        level: Native
+
+      - idiom: English
+        level: Intermediate
+
+    interests:
+      - item: Bike riding
+        link:
+
+      - item: Ice skating
+        link:
+    
+    softskills:
+      - item: Responsible
+      - item: Open-minded
+      - item: Team Player
+
+
+
+
+
+career-profile:
+    title: Career Profile
+    summary: |
+      A self-motivated student is looking for Java course or job in an innovative company to 
+      improve their knowledge and use it in practice.
+
+
+
+education:
+    - degree: Bachelor in Computer Science
+      university: BSUIR
+      time: 2017 - now
+      details: |
+        Describe your study here lorem ipsum dolor sit amet, consectetuer
+        adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
+        sociis natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+        pretium quis, sem.
+          - Bullet point
+          - Bullet point
+
+
+
+experiences:
+    - role: Java developer student
+      time: 2020 - now
+      company: Epam training center, Minsk
+      details: |
+        Educating in EPAM software training center as java developer student. 
+        As a result of course i have developed my own web application.
+    - role: System administrator assistant at 2nd European Games
+      time: May 2019 - July 2019
+      company: Synesis, Minsk
+      details: | 
+        Maintenance technical infrastructure and mobile application to provide appropriate level of successful work internal services. Shift work.
+
+
+projects:
+    title: Projects
+    intro: >
+      Here will be covered my experience in software development which i've gotten at university and training center projects. 
+    assignments:
+      - title: Autoservice check in system
+        tagline: "Create cli application to store information about customers, their cars and what kind of work will be done and how much it will cost."
+
+      - title: Web application service
+        tagline: "Small client-server chat application. Chat allows users exchange messages and store it in a database for a mounth."
+
+      - title: Training tasks
+        link: "https://github.com/ArturKragel/JWD-Task01"
+        tagline: "Work with Java at Epam training center course. Get basic knowledge about OOP, clases, interfaces, methods. Become familiar with web based client-server application."
+
+
+
+publications:
+   
+
+
+skills:
+    title: Skills &amp; Proficiency
+
+    toolset:
+      - name: C++ & Java 
+        level: 60%
+
+      - name: MSSQL
+        level: 70%
+
+      - name: UML
+        level: 80%
+
+      - name: Visual Studio & IntelliJ IDEA	
+        level: 50%
+
+      - name: Windows OS
+        level: 90%
+
+      - name: Linux OS 
+        level: 30%
+
+footer: 
+      - CustomSiteRoom©

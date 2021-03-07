@@ -1,57 +1,32 @@
-# frozen_string_literal: true
-
-source 'https://rubygems.org'
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
-
-gem 'active_storage_validations', '0.8.2'
-gem 'bcrypt',                     '3.1.13'
-gem 'bootsnap',                   '1.4.5', require: false
-gem 'bootstrap-sass',             '3.4.1'
-gem 'bootstrap-will_paginate',    '1.0.0'
-gem 'factory_bot',                '6.1.0'
-gem 'factory_bot_rails',          '6.1.0'
-gem 'faker',                      '2.1.2'
-gem 'image_processing',           '1.9.3'
-gem 'jbuilder',                   '2.9.1'
-gem 'mini_magick',                '4.9.5'
-gem 'puma',                       '3.12.2'
-gem 'rails',                      '6.0.2.1'
-gem 'sass-rails',                 '5.1.0'
-gem 'turbolinks',                 '5.2.0'
-gem 'webpacker',                  '4.0.7'
-gem 'will_paginate',              '3.1.8'
-
-group :development, :test do
-  # gem 'debase'
-  # gem 'ruby-debug-ide'
-  gem 'byebug',             '11.0.1', platforms: %i[mri mingw x64_mingw]
-  gem 'rspec-rails',        '3.9.0'
-  gem 'simplecov',          '0.19.0'
-  gem 'sqlite3',            '1.4.1'
+source "https://rubygems.org"
+# Hello! This is where you manage which Jekyll version is used to run.
+# When you want to use a different version, change it below, save the
+# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
+#
+#     bundle exec jekyll serve
+#
+# This will help ensure the proper Jekyll version is running.
+# Happy Jekylling!
+gem "jekyll", "~> 4.2.0"
+# This is the default theme for new Jekyll sites. You may change this to anything you like.
+gem "minima", "~> 2.5"
+# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
+# uncomment the line below. To upgrade, run `bundle update github-pages`.
+# gem "github-pages", group: :jekyll_plugins
+# If you have any plugins, put them here!
+group :jekyll_plugins do
+  gem "jekyll-feed", "~> 0.12"
 end
 
-group :development do
-  gem 'listen',                '3.1.5'
-  gem 'spring',                '2.1.0'
-  gem 'spring-watcher-listen', '2.0.1'
-  gem 'web-console',           '4.0.1'
+# Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
+# and associated library.
+platforms :mingw, :x64_mingw, :mswin, :jruby do
+  gem "tzinfo", "~> 1.2"
+  gem "tzinfo-data"
 end
 
-group :test do
-  gem 'capybara',                 '3.28.0'
-  gem 'guard',                    '2.15.0'
-  gem 'guard-minitest',           '2.4.6'
-  gem 'minitest',                 '5.11.3'
-  gem 'minitest-reporters',       '1.3.8'
-  gem 'rails-controller-testing', '1.0.4'
-  gem 'selenium-webdriver',       '3.142.3'
-  gem 'webdrivers',               '4.1.2'
-end
+# Performance-booster for watching directories on Windows
+gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
-group :production do
-  gem 'aws-sdk-s3', '1.46.0', require: false
-  gem 'pg', '1.1.4'
-end
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+gem "webrick", "~> 1.7"
